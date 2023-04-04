@@ -116,7 +116,7 @@ section {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url("Elements/Frame\ 6.png");
+    background: url("Frame\ 6.png");
     background-size: cover;
     background-position: center;
 }
@@ -225,7 +225,7 @@ section {
     justify-content: flex-end;
     text-align: right;
     min-height: 100vh;
-    background: url("Elements/cenamatic\ .png");
+    background: url("cenamatic\ .png");
     background-size: cover;
     background-position: center;
 }
@@ -411,7 +411,7 @@ section {
 
 .faltuk {
     display: flex;
-    background: url(Elements/faltukstyle.png);
+    background: url(faltukstyle.png);
     align-items: center;
     align-content: center;
     justify-content: center;
