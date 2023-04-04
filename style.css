@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 30px;
+    transition: all .50s ease;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: #000;
+    font-size: 35px;
+    margin-right: 7px;
+    font-weight: 400;
+}
+
+.logo span {
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+    display: inline-block;
+    border: 3px solid transparent;
+
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: black;
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+}
+
+.connect a {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 1.5rem;
+    transition: all .50s ease;
+}
+
+#menu-icon {
+    margin-left: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+}
+
+.contact a i:hover {
+    transform: translateY(-3px);
+    transition: 0.2s all ease-out;
+}
+
+/* Home Section Css */
+
+section {
+    padding: 2rem 9%;
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("Elements/Frame\ 6.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 40rem;
+
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home .content span {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: #fff;
+    color: #000;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.home .content a:hover {
+    transform: translateY(5px);
+    transition: 0.2s all ease-out;
+}
+
+/* studio Section Css */
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0.2rem;
+}
+
+.subhead {
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.workcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 20rem;
+    text-align: center;
+}
+
+.work a {
+    font-size: 6rem;
+    color: #252525;
+    margin-bottom: -20px;
+}
+
+.work p {
+    color: #666666;
+}
+
+.work span {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.work a:hover {
+    transform: translateY(-6px);
+    transition: 0.1s all ease;
+}
+
+
+.cinematic {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    min-height: 100vh;
+    background: url("Elements/cenamatic\ .png");
+    background-size: cover;
+    background-position: center;
+}
+
+.cinematic .cinema {
+    max-width: 40rem;
+
+}
+
+.cinematic .cinema h3 {
+    font-size: 5rem;
+    color: #fff;
+    line-height: 5rem;
+}
+
+.cinematic .cinema span {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.cinematic .cinema p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.cinematic .cinema a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: #fff;
+    color: #000;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-size: 1.2 rem;
+}
+
+.cinematic .cinema a:hover {
+    transform: translateY(5px);
+    transition: 0.2s all ease-out;
+}
+
+
+.recentpotraits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.recentpotraits .feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.recentpotraits .feed img {
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: calc(1rem);
+    border: #252525;
+}
+
+.clickbtn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.clickbtn a {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #000;
+    color: #fff;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.clickbtn a:hover {
+    transform: translateY(-5px);
+    transition: 0.2s all ease;
+}
+
+.workdone {
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.orders {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    gap: 7.5rem;
+}
+
+.orders .order {
+    justify-content: center;
+    text-align: center;
+}
+
+.orders span {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.orders p {
+    font-size: 1.2rem;
+    font-weight: 450;
+    margin-top: -10px;
+}
+
+.youtubevid .youtube .youtubecon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.youtubevid .youtube .youtubecon h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.youtubevid .youtube .youtubecon h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+.youtubevid .youtube .youtubecon img {
+    height: 198px;
+    width: 352px;
+}
+
+.clickbtn4 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.clickbtn4 a {
+    display: inline-block;
+    margin-top: -2rem;
+    background: #000;
+    color: #fff;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.clickbtn4 a:hover {
+    transform: translateY(-5px);
+    transition: 0.2s all ease;
+}
+
+.faltuk {
+    display: flex;
+    background: url(Elements/faltukstyle.png);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.faltuk .style {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.faltuk .style a {
+    color: transparent;
+}
+
+.faltuk2 {
+    display: none;
+    background: black;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.mteam {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    align-content: center;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.mphoto img {
+    height: 317px;
+    width: 260px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.member h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111111;
+}
+
+.member h2 {
+    margin-top: -4px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c2c2c;
+}
+
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+}
+
+.pata {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.pata .head1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.pata .headp {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #cfcfcf;
+}
+
+.pata .headp a {
+    margin-top: 4px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #cfcfcf;
+}
+
+.pata .headp i {
+    margin-right: 7px;
+}
+
+.footer .pata .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: white;
+    color: #000;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none; 
+}
+
+.footer .pata .btn:hover{
+    transform: translateY(-3px);
+    transition: all 0.15s ease-in;
+}
+
+.footer .pata .headp{
+    display: flex;
+}
+
+.footer .pata .headp:hover{
+    transform: translateY(-3px);
+    transition: all 0.15s ease-in;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.form .formcon {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form .formcon h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+.form .formcon .mform{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.form .formcon .mform input, textarea {
+    border-color: #cfcfcf;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #313131;
+}
+
+.form .formcon .mform input {
+    width: 300px;
+    height: 20px;
+}
+
+.form .formcon .mform textarea {
+    height: 80px;
+    width: 300px;
+}
+
+.formcon button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: white;
+    color: #000;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.formcon button:hover{
+    transform: translateY(-3px);
+    transition: all 0.15s ease-in;
+}
+
+
+/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
+
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+    }
+
+    .contact {
+        display: none;
+        transition: all .50s ease;
+    }
+
+    header #nav_check:checked~nav {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li a {
+        margin: 5px 0;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    section {
+        padding: 2rem;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #000;
+        padding-top: 0.8rem;
+        padding-bottom: 0;
+        margin-bottom: 0.2rem;
+        margin-bottom: 10px;
+    }
+
+    .subhead {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #000;
+        line-height: 2.5rem;
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .home .content span {
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+
+    .home .content p {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+
+    .cinematic .cinema h3 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .cinematic .cinema span {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .cinematic .cinema p {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+
+    .recentpotraits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .recentpotraits .feed {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 2rem;
+        row-gap: 0.2rem;
+        column-gap: 0.2rem;
+    }
+
+    .recentpotraits .feed img {
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: calc(1rem);
+        border: #252525;
+    }
+
+    .recentpotraits .feed a {
+        display: inline-block;
+        margin-top: 1.5rem;
+        background: #000;
+        color: #fff;
+        padding: 0.6rem 2rem;
+        cursor: pointer;
+        font-size: 1.2 rem;
+    }
+
+    .orders {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        background-color: #000;
+        color: #fff;
+        margin-bottom: 70px;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .orders .order {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .orders span {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .orders p {
+        font-size: 0.8rem;
+        font-weight: 450;
+        margin-top: -6px;
+    }
+
+    .faltuk {
+        display: none;
+    }
+
+    .faltuk2 {
+        display: flex;
+        background: black;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    .footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .mteam {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        align-content: center;
+        margin-top: 2rem;
+        /* margin-left: -2rem; */
+    }
+
+    .mphoto img {
+        height: 146px;
+        width: 120px;
+    }
+
+    .member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .member h1 {
+        font-size: 1rem;
+        font-weight: 800;
+        color: #111111;
+    }
+
+    .member h2 {
+        margin-top: -4px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #2c2c2c;
+    }
+
+    .pata {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .pata .head1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .pata .headp {
+        margin-bottom: -5px;
+        margin-top: 4px;
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: #cfcfcf;
+    }
+
+    .pata .headp i {
+        margin-right: 3px;
+    }
+
+    .pata .headp a {
+        margin-bottom: -4px;
+    }
+}
