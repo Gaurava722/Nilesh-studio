@@ -116,7 +116,7 @@ section {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url("Frame\ 6.png");
+    background: url("Frame6.png");
     background-size: cover;
     background-position: center;
 }
